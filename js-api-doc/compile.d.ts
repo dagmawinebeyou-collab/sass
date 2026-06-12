@@ -15,6 +15,8 @@ export interface CompileResult {
    * Note that this *never* includes a `sourceMapUrl` comment—it's up to the
    * caller to determine where to save the source map and how to link to it from
    * the stylesheet.
+   * whether to include source map comments in the generated CSS, and if so what the source map URL should be, by having a custom {@link Importer} return
+   * {@link ImporterResult.sourceMapUrl}.
    */
   css: string;
 
